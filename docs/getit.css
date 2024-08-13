@@ -1,101 +1,88 @@
-/*
-Algumas informações úteis e dicas:
-  - Fontes disponíveis:
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Permanent Marker', cursive;
-  - Cores:
-    Tons de amarelo:
-      #e4fc2b
-      #e0d426
-      #f7d736
-      #e0af26
-      #fcb02b
-    Tons de cinza:
-      #2c2c2c
-      #4c4c4c
-    Cores dos cards:
-      #ead3a7
-      #9de0f5
-      #ef89ba
-      #fae890
-      #abe9c1
-  - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
- */
 
 html,
 body {
   font-family: "Roboto", sans-serif;
+  
 }
-
+main {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .appbar {
   width: 100%;
-  background-color: #ffeb3b;
+  background-color: #f7d736;
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
-  box-shadow: 0 0.2rem 0.4rem gray
+  padding: .75rem;
+  box-shadow: 0 0.5rem 0.9rem gray;
+  margin-bottom: 30px;
+  height: 45px;
 }
 .logo {
-  height: 1.5rem;
-  margin-right: 1.2rem; 
+  height: 3rem;
+  width: auto;
+  margin-right: 1rem; 
 }
 
 .subtitle {
-  color: #333;
-  font-size: .75rem;
+  color: #4c4c4c; /* Um tom de cinza escuro */
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 0.5rem; /* Ajuste de margem para posicionamento */
+  margin-top: 0.25rem;
 }
 
-/* Você pode usar o CSS comentado abaixo, se ajudar */
-/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
-/* .btn {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
+.form-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  
+  width: 30rem;
+  height: 8rem;
+  max-height: 10rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 
-  overflow: hidden;
-
-  border-width: 0;
+.form-card-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  border: none;
   outline: none;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  margin-left: 0.5rem;
+}
 
+.autoresize {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  margin-top: .7rem;
+  font-size: .7rem;
+  margin-left: 0.5rem;
+  outline: none;
+  resize: none;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
   background-color: #f7d736;
-
-  transition: background-color 0.3s;
+  border: none;
+  margin-top: .3rem;
+  margin-left : .5rem;
+  margin-right: .5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.2rem gray
 }
 
-.btn > * {
-  position: relative;
-}
 
-.btn:before {
-  content: "";
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  display: block;
-  width: 0;
-  padding-top: 0;
-
-  border-radius: 100%;
-
-  background-color: rgba(236, 240, 241, 0.3);
-
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.btn:active:before {
-  width: 120%;
-  padding-top: 120%;
-
-  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
-} */
 
 .card-container {
   margin-left: 3.5%;
@@ -109,13 +96,8 @@ body {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   margin: 0 auto;
-}
-.form-card {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .card {
