@@ -25,26 +25,83 @@ Algumas informações úteis e dicas:
 html,
 body {
   font-family: "Roboto", sans-serif;
+  
 }
 
+main {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .appbar {
   width: 100%;
   background-color: #ffeb3b;
   display: flex;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: .75rem;
   box-shadow: 0 0.2rem 0.4rem gray
 }
 .logo {
-  height: 1.3rem;
+  height: 2.25rem;
+  width: auto;
   margin-right: 1rem; 
 }
 
 .subtitle {
-  color: #333;
-  font-size: .75rem;
+  color: #4c4c4c; /* Um tom de cinza escuro */
+  font-size: 0.85rem;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 0.5rem; /* Ajuste de margem para posicionamento */
+  margin-top: 0.25rem;
 }
 
+.form-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  
+  width: 30rem;
+  height: 8rem;
+  max-height: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.form-card-title {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  margin-left: 0.5rem;
+}
+
+.autoresize {
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  margin-top: .7rem;
+  font-size: .7rem;
+  margin-left: 0.5rem;
+  outline: none;
+  resize: none;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffeb3b;
+  border: none;
+  margin-top: .3rem;
+  margin-left : .5rem;
+  margin-right: .5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.2rem gray
+}
 /* Você pode usar o CSS comentado abaixo, se ajudar */
 /* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
 /* .btn {
